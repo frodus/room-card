@@ -282,8 +282,8 @@ class RoomCard extends LitElement {
     if (control.tap_action) {
       action = () => this.handleAction(control.tap_action, control.entity);
     }
-    
-    if (control.hold_action) {
+
+    else if (control.hold_action) {
       action = () => this.handleAction(control.hold_action, control.entity);
     }
   
