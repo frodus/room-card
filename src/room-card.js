@@ -282,6 +282,10 @@ class RoomCard extends LitElement {
     if (control.tap_action) {
       action = () => this.handleAction(control.tap_action, control.entity);
     }
+    
+    if (control.hold_action) {
+      action = () => this.handleAction(control.hold_action, control.entity);
+    }
   
     return html`
       <div class="control" @click="${action}" style="padding: ${controlPadding}; width: 50%; background: ${background};">
